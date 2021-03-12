@@ -52,26 +52,113 @@ html {
     font-size: 62.5%;
 }
 
-* {
-    border: 5px solid black;
+body {
+    border: 2px solid black;
 }
 
-header {
+
+.intro {
     display: flex;
-    padding: 1%;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    background-color: blue;
+    height: 55vh;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+nav {
+    width: 33.3%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+a {
+    color:black;
+    padding: 4% 3%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 100%;
+    text-decoration: none;
+    border: 2px solid black;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.main_project {
+    display: flex;
+    width: 100%;
+    height: 55vh;
+}
+
+.main_project img {
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    margin: 3% 0;
+}
+
+.project_gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+}
+
+.project_gallery img {
+    width: 24%;
+    height: 50vh;
+}
+
+.project_info {
+    width: 35%;
     justify-content: center;
 }
 
-header .circle {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: purple;
-    margin: 0 .3%;
+.project_info p {
+    padding: 0 15%;
+    text-align: center;
+    font-size: 2.1rem;
 }
 
-header p {
-    font-size: 1.5rem;
+span {
+    font-style:italic;
+    font-weight: bold;
+    font-size: 2.1rem;
+}
+
+.social {
+    width:50%;
+}
+
+.contact {
+    display:flex;
+    width: 100%;
+}
+
+#contact_me {
+    
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    
+} 
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color:bisque;
+
 }
