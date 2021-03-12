@@ -83,7 +83,7 @@ a {
     color:black;
     padding: 4% 3%;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     width: 100%;
     text-decoration: none;
     border: 2px solid black;
@@ -139,21 +139,30 @@ span {
     font-size: 2.1rem;
 }
 
-.social {
-    width:50%;
-}
-
-.contact {
-    display:flex;
+footer {
+    display: flex;
     width: 100%;
-}
-
-#contact_me {
-    
+    height: 20vh;
+    background-color:bisque;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    
+}
+
+
+
+#contact_me {
+    color:white;
+    padding: 1% 1%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width:10%;
+    text-decoration: none;
+    border: 2px solid black;
+    text-align: center;
+    background-color:cornflowerblue;
 } 
 
 footer {
