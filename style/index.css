@@ -19,7 +19,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -29,9 +28,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -57,12 +54,21 @@ html {
     padding: 0;
     margin: 0;
     max-width:100%;
+    /* border: 1px solid black; */
 }
 
 body {
-    border: 2px solid black;
+	line-height: 1.5;
+    font-size: 1.8rem;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
 
 
 .intro {
@@ -70,7 +76,6 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 55vh;
     justify-content: space-evenly;
 }
 
@@ -121,7 +126,7 @@ h2 {
 .gallery {
     display: flex;
     padding: 4% 0;
-    /* justify-content: space-evenly; */
+    width: 100%;
 }
 
 .gallery_case {
@@ -134,17 +139,16 @@ h2 {
     width: 23%;
 }
 
-.gallery p {
-    font-size: 2.1rem;
-    text-align:center;
+.gallery div p {
+    font-size: 1.6rem;
+     text-align:center;
     width: 35%;
-    padding: 1% 6%;
 } 
 
 span {
     font-style:italic;
     font-weight: bold;
-    font-size: 2.1rem;
+    font-size: 1.6rem;
 }
 
 footer {
@@ -181,4 +185,88 @@ footer {
 
 i {
     font-size: 5rem;
+}
+
+/* Media Query */
+
+/* from 500px to 800px these attributes will take precedence (desktop) */
+@media (max-width: 800px){
+
+}
+
+/* from 0 to 500px these will take precedence (phone view) */
+@media (max-width: 500px){
+
+    body {
+        display:flex;
+        flex-direction: column;
+        
+    }
+
+     header {
+        margin: 3% 0 5%;
+    }
+
+    h1 {
+        margin-bottom: 4%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .intro {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .intro h2 {
+        font-size: 3.5rem;
+        margin-bottom: 4%;
+    }
+
+    .main_project {
+        height: 30vh;
+        width:100%;
+        justify-content: center;
+    }
+
+    .main_project img {
+        width: 90%;
+    }
+
+    .gallery {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .gallery_case {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .gallery_case img {
+        width: 45%;
+        margin: 1% 0 2%;
+    }
+
+    .gallery div {
+        width: 100%;
+    }
+
+    .gallery div p {
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 5%;
+    }
+/* footer content */
+
+#contact_me {
+    width: 20%;
+}
+
+.social {
+    width: 50%;
+    justify-content: space-between;
+}
+  
 }
