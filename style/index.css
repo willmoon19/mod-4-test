@@ -128,7 +128,7 @@ h2 {
     width: 100%;
 }
 
-.gallery_case {
+.gallery .gallery_case {
     display:flex;
     width: 100%;
     justify-content: space-evenly;
@@ -136,16 +136,18 @@ h2 {
 
 .gallery_case img {
     width: 23%;
+    height: 100vh;
 }
 
-.gallery .projetNotes {
-    width: 30%;
+.gallery div {
+    width: 50%;
 }
+
 
 .gallery div p {
     font-size: 1.6rem;
-     text-align:center;
-    width: 35%;
+    text-align:center;
+    width: 95%;
 } 
 
 span {
