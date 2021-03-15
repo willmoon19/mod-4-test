@@ -191,17 +191,49 @@ i {
 
 /* from 500px to 800px these attributes will take precedence (desktop) */
 @media (max-width: 800px){
+    .top_buttons {
+        flex-direction: column;
+        width: 15%;
+        margin: 1% 0;
+    }
 
+    .intro {
+        margin: 4% 0;
+    }
+
+    .gallery {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery_case {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .gallery_case img {
+        width: 40%;
+        margin: 1% 0 2%;
+    }
+
+    .gallery .projectNotes {
+        width: 60%;
+    }
+
+    .gallery .projectNotes p {
+        width: 100%;
+        padding: 3%;
+    }
+
+    footer #contact_me {
+        width: 15%;
+    }
 }
 
 /* from 0 to 500px these will take precedence (phone view) */
 @media (max-width: 500px){
 
-    body {
-        display:flex;
-        flex-direction: column;
-        
-    }
 
      header {
         margin: 3% 0 5%;
