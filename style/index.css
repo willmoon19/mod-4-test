@@ -136,7 +136,7 @@ h2 {
 
 .gallery_case img {
     width: 23%;
-    height: 100vh;
+    height: 60vh;
 }
 
 .gallery div {
@@ -283,11 +283,12 @@ i {
     .gallery_case {
         width: 100%;
         flex-wrap: wrap;
+        align-content: space-between;
     }
 
     .gallery_case img {
         width: 40%;
-        margin: 1% 0 2%;
+        /* margin: 1% 0 2%; */
     }
 
     .gallery div {
